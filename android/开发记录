@@ -17,7 +17,7 @@
 	                    // 使用InputStream，从URLConnection读取数据
 	                    InputStream is = ucon.getInputStream();
 	                    final Bitmap bitmap = BitmapFactory.decodeStream(is);
-	                    ImageUtils.saveImageToGallery(PrototypeContestActivity.this, bitmap);
+	                ImageUtils.saveImageToGallery(PrototypeContestActivity.this, bitmap);
 	                }catch (Exception e){
 	                    e.printStackTrace();
 	                }
@@ -25,7 +25,7 @@
 	        }).start();
 3、图片字节流转图片容易出现信息丢失的问题（分辨率丢失后会被修改成默认的分辨率）
 
-因此建议直接保存文件到手机。其次在华为手机上保存到手机的图片不会自动显示到图库，所以需要发送个广播通知图库更新照片。
+因此建议直接保存文件到手机。其次在华为手机上保存到手机的图片不会自动显示到图库，所以需要发送广播通知图库更新照片。
 
 ```
 // 定义获取文件内容的URL
