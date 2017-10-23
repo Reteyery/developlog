@@ -35,9 +35,9 @@ URLConnection ucon = myURL.openConnection();
 // 使用InputStream，从URLConnection读取数据
 InputStream is = ucon.getInputStream();
 File appDir = new File(Environment.getExternalStorageDirectory(), "52TOYS");
-if (!appDir.exists()) {
+    if (!appDir.exists()) {
     appDir.mkdir();
-}
+    }
 String fileName = System.currentTimeMillis() + ".png";
 File file = new File(appDir, fileName);
 FileOutputStream fos = new FileOutputStream(file);
@@ -46,9 +46,7 @@ int len1 = 0;
 while((len1 = is.read(buffer)) != -1){
     fos.write(buffer, 0, len1);
 }
-// 其次把文件插入到系统图库
-MediaStore.Images.Media.insertImage(PrototypeContestActivity.this.getContentResolver(),
-        file.getAbsolutePath(), fileName, null);
 // 最后通知图库更新
-PrototypeContestActivity.this.sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, Uri.parse("file://" + path)));
+Uri uri = Uri.fromFile(file);
+sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
 ```
