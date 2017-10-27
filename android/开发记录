@@ -1,6 +1,8 @@
 1、webview使用记录
 	1、拦截请求跳转有两个loding方法，shouldOverrideUrlLoading，参数方式不一样
-	shouldOverrideUrlLoading(WebView view, final String url)被丢弃，但是 此方法可以拦截请求，另外一个拦截不到（未知）
+	api < 24 使用 shouldOverrideUrlLoading(WebView view, final String url);
+	api >= 24 使用 shouldOverrideUrlLoading(WebView view, final WebResourceRequest request)
+	request提供获取uri的方法
 	当返回值为false weview自己处理网络请求；返回值为true时,可以控制请求跳转至app原生界面或者消费掉下一次请求，使页面不再跳转
 	2、webview加载页面和传递参数使用webview.loadUrl方法
 	传递参数 eg: webView.loadUrl("javascript:setUserToken('" + token + "')");
