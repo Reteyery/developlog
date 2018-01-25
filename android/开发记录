@@ -80,3 +80,5 @@ Donut 	                1.6 	                        API level 4, NDK 2
 Cupcake 	            1.5 	                        API level 3, NDK 1
 (no code name) 	        1.1 	                        API level 2
 (no code name) 	        1.0 	                        API level 1
+
+5、android studio 查看某个类的所有方法快捷键 ctrl + F12
