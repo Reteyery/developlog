@@ -63,7 +63,7 @@
 
 	Code name 	      Version(System Version) 	        API level(SdkVersion)
 
-	Oreo                    8.0	                            API level 26
+	Oreo                    8.0                             API level 26
 	Nougat 	                7.1 	                        API level 25
 	Nougat 	                7.0 	                        API level 24
 	Marshmallow 	        6.0 	                        API level 23
