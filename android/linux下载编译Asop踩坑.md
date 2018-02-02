@@ -11,11 +11,9 @@ linux下载编译Asop踩坑
 
 3、vi编辑器上下左右键变ABCD的解决方法
 
-	首先卸载旧版本的vi编辑器：
-　  $sudo apt-get remove vim-common
+	首先卸载旧版本的vi编辑器：$sudo apt-get remove vim-common
 
-　  然后安装新版vi即可：
-　  sudo apt-get install vim
+　  然后安装新版vi即可：sudo apt-get install vim
 
 4、下载Asop
 
