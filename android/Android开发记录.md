@@ -1,14 +1,20 @@
 1、webview使用记录
+
 	1、拦截请求跳转有两个loding方法，shouldOverrideUrlLoading，参数方式不一样
 	api < 24 使用 shouldOverrideUrlLoading(WebView view, final String url);
 	api >= 24 使用 shouldOverrideUrlLoading(WebView view, final WebResourceRequest request)
+
 	request提供获取uri的方法
+
 	当返回值为false weview自己处理网络请求；返回值为true时,可以控制请求跳转至app原生界面或者消费掉下一次请求，使页面不再跳转
+
 	2、webview加载页面和传递参数使用webview.loadUrl方法
+
 	传递参数 eg: webView.loadUrl("javascript:setUserToken('" + token + "')");
 	加载页面 eg：webView.loadUrl(url);
 	
 2、图片字节流转换图片
+
 	new Thread(new Runnable() {
 	            @Override
 	            public void run() {
@@ -54,6 +60,7 @@
 	sendBroadcast(new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE, uri));
 
 4、android版本号和系统
+
 	Code name 	      Version(System Version) 	        API level(SdkVersion)
 
 	Oreo					8.0								API level 26
