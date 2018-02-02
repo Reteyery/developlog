@@ -63,12 +63,12 @@
 
 	Code name 	      Version(System Version) 	        API level(SdkVersion)
 
-	Oreo                    8.0								API level 26
+	Oreo                    8.0	                            API level 26
 	Nougat 	                7.1 	                        API level 25
 	Nougat 	                7.0 	                        API level 24
 	Marshmallow 	        6.0 	                        API level 23
-	Lollipop 	            5.1 	                        API level 22
-	Lollipop 	            5.0 	                        API level 21s
+	Lollipop                5.1                             API level 22
+	Lollipop                5.0                             API level 21s
 	KitKat 	                4.4 - 4.4.4 	                API level 19
 	Jelly Bean 	            4.3.x 	                        API level 18
 	Jelly Bean 	            4.2.x 	                        API level 17
@@ -85,7 +85,7 @@
 	Eclair 	                2.0.1 	                        API level 6
 	Eclair 	                2.0 	                        API level 5
 	Donut 	                1.6 	                        API level 4, NDK 2
-	Cupcake 	            1.5 	                        API level 3, NDK 1
+	Cupcake                 1.5                             API level 3, NDK 1
 	(no code name) 	        1.1 	                        API level 2
 	(no code name) 	        1.0 	                        API level 1
 
