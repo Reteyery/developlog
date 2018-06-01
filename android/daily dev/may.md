@@ -91,3 +91,10 @@
     查看分支 git branch -a
     同步分支 git checkout -b 远程分支
     删除分支 git branch -D 分支名称
+
+6、cygwin连接ssh步骤
+
+    1、安装cygwin, 在选择安装的插件页搜索 openssh安装
+    2、配置ssh，启动ssh服务 https://jingyan.baidu.com/article/3aed632e6597847011809151.html
+    3、命令行下 mount 完成linux到windows文件映射
+    4、访问ssh地址即可
