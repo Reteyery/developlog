@@ -86,7 +86,6 @@
 5、git操作命令
 
     checkout过程输入完整路径
-    
     checkout远程分支
     查看分支 git branch -a
     同步分支 git checkout -b 远程分支
@@ -98,3 +97,24 @@
     2、配置ssh，启动ssh服务 https://jingyan.baidu.com/article/3aed632e6597847011809151.html
     3、命令行下 mount 完成linux到windows文件映射
     4、访问ssh地址即可
+
+7、Android Theme.AppCompat 颜色属性
+
+    https://blog.csdn.net/growing_tree/article/details/70305625
+
+8、apk手动签名
+
+    已编译出来的apk手动签名
+
+    java -jar signapk.jar platform.x509.pem platform.pk8 old.apk new.apk
+
+    old、new需要输入路径（windows下将被签名apk直接拖进终端自动加载路径）
+    （platform.pem pk8为当前项目签名所需文件）
+
+9、adb 操作
+
+   system操作无权限执行
+   adb root
+   adb remount
+
+   linux修改完配置文件， 执行 source 文件名 使修改生效 
