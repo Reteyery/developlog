@@ -32,7 +32,7 @@
 
 4、linux打包命令
 
-    FileNAme为压缩后的名称， DirName为原始文件夹名称
+    FileName为压缩后的名称， DirName为原始文件夹名称
     .tar
     压缩：tar cvf FileName.tar FileName
     解压：tar xvf FileName.tar
@@ -110,11 +110,17 @@
 
     old、new需要输入路径（windows下将被签名apk直接拖进终端自动加载路径）
     （platform.pem pk8为当前项目签名所需文件）
-
+    ps:将所有的文件在同一目录下操作，就不需要输入路径，避免手动出错
 9、adb 操作
 
    system操作无权限执行
    adb root
    adb remount
 
-   linux修改完配置文件， 执行 source 文件名 使修改生效 
+   linux修改完配置文件， 执行 source 文件名 使修改生效
+
+10、ConstraintLayout约束布局显示问题
+
+    ConstraintLayout在使用margin或padding控制边距时会出现边距失效的情况，正确的使用方式是：两个组件一个宽度设置为0dp，一个设置为wrap_content。同时设置为0dp的效果是1:1等分。 
+
+11、map flatmap
