@@ -29,5 +29,10 @@
 
     比如布局中使用TabLayout，则需要给TabLayout设置theme属性
 
+4、使用amend追加提交信息
+
+    在代码还没有merge到仓库时，使用git commit --amend -m "" 追加提交信息
+
+
     
     
