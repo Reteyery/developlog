@@ -33,6 +33,12 @@
 
     在代码还没有merge到仓库时，使用git commit --amend -m "" 追加提交信息
 
+5、adb截图命令
+   
+   adb shell screencap -p /sdcard/sc.png
+   adb pull /sdcard/sc.png
+
+
 
     
     
