@@ -2,7 +2,8 @@
 
     mkdir gitTest
     cd gitTest
-    touch README
+    touch README #创建文件
+    car README #查看文件内容
     git add README
     git config --global user.name "joker"
     git config --global user.email "729239206@qq.com"
@@ -10,7 +11,7 @@
     git remote add origin git@github.com:Reteyery/git.git #添加远程仓库git地址
     git push -u origin master #推送到远程仓库
 
-    git push origin --delete #远程分支名称 #删除远程分支
+    git push origin --delete 远程分支名称 #删除远程分支
     git log --pretty=oneline #查看近期提交记录
     git reflog #查看分支操作记录（在版本回退时，方便根据commit id回退）
     git log --graph --pretty=oneline --abbrev-commit #查看分支合并记录
@@ -22,7 +23,7 @@
 
     合并后 git log --graph --pretty=oneline --abbrev-commit #查看分支合并记录
 
-    2.当手头工作没有完成，且遇到新的紧急任务比如修复bug，把工作现场git stash一下，然后修复bug，修复完成后，git stash pop回到工作现场（修复bug，一般穿件新的bug分支进行修复，然后合并，最后删除分支）
+    2.当手头工作没有完成，且遇到新的紧急任务比如修复bug，把工作现场git stash一下，然后修复bug，修复完成后，git stash pop回到工作现场（修复bug，一般创建新的bug分支进行修复，然后合并，最后删除分支）
 
     stash:将工作区的修改暂存起来 通过git stash pop恢复现场
 
