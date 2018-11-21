@@ -3,7 +3,7 @@
     mkdir gitTest
     cd gitTest
     touch README #创建文件
-    car README #查看文件内容
+    cat README #查看文件内容
     git add README
     git config --global user.name "joker"
     git config --global user.email "729239206@qq.com"
