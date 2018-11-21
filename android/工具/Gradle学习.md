@@ -1,5 +1,7 @@
-1、-q 参数q的作用是让Gradle不要打印错误之外的信息
+##Gradle##
 
-2、任务依赖 dependsOn:task
+    1、-q 参数q的作用是让Gradle不要打印错误之外的信息
 
-3、...
+    2、任务依赖 dependsOn:task
+
+    3、...

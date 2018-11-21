@@ -1,4 +1,4 @@
-##git速查##
+##Git速查##
 
     mkdir gitTest
     cd gitTest
