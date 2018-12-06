@@ -20,3 +20,5 @@
 
     以访问jcenter()为例，将其替换为镜像地址 
     jcenter {url 'https://maven.aliyun.com/repository/jcenter'}
+
+    阿里云镜像地址: http://maven.aliyun.com/mvn/view
