@@ -4,6 +4,4 @@
 
     https://zhuanlan.zhihu.com/p/20515156
 
-2、Class<>
-
-3、View.inflate(parent.getContext(), R.layout.item_list, null); root = null ???
+2、View.inflate(parent.getContext(), R.layout.item_list, null); root = null ???
