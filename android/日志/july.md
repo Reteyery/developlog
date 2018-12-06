@@ -9,3 +9,14 @@
 
     返回值为PagerAdapter.POSITION_NONE
     
+2、gradle连接外网访问依赖库失败问题
+
+    访问外网如果失败，可以借助aliyun国内镜像，eg:
+
+    repositories {
+        google()
+        jcenter()
+    }
+
+    以访问jcenter()为例，将其替换为镜像地址 
+    jcenter {url 'https://maven.aliyun.com/repository/jcenter'}
