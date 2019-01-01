@@ -10,9 +10,9 @@
     ssh-keygen -t rsa -C "729239206@qq.com" #将生成的密钥放到github或者其他代码托管工具，否则没有权限推送
     git remote add origin git@github.com:Reteyery/git.git #添加远程仓库git地址
     git push -u origin master #推送到远程仓库
-
     git push origin --delete 远程分支名称 #删除远程分支
     git log --pretty=oneline #查看近期提交记录
+    git log --stat commitid #查看某次提交的文件列表
     git reflog #查看分支操作记录（在版本回退时，方便根据commit id回退）
     git log --graph --pretty=oneline --abbrev-commit #查看分支合并记录
     git reset --hard commit_id #版本回退
